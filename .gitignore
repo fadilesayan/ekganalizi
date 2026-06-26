@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache files
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# API keys and local config (CRITICAL: contains Gemini API key!)
+config.json
+
+# User uploads / temporary files
+uploads/*
+!uploads/.gitkeep
+
+# Large trained models (each file is ~70-95MB)
+# It is recommended to exclude them to avoid hitting GitHub limits
+ekg_models/
+ekg_models_resnet50/
